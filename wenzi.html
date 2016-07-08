@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>寻找徐峥页面-2</title>
+	<style type="text/css">
+*{
+	padding:0;
+	margin: 0;
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+	background-color: black;
+}
+.wrap{
+position: relative;
+text-align: center;
+width: 100%;
+height: 100%;
+
+}
+.bj{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	max-width: 640px;
+}
+/****************三个星星******************/
+.one_pic1{
+top:20%;left:30%
+}
+.one_pic2{
+top:60%;left:30%
+}
+.one_pic3{
+top:60%;left:60%
+}
+.star{
+position: absolute;
+z-index: 1;
+width: 20%;
+}
+
+/************************************************************/
+.word_wrap{
+	padding-top: 30%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	font-size:20px;
+	line-height: 45px;
+	text-align: center;
+	color: rgba(255,255,255,0.8);
+	z-index: 2;
+}
+.super{
+	position: absolute;
+	width: 100%;
+	max-width: 640px;
+	top: 0;
+	left:0;
+}
+.super_head{
+	position: absolute;
+	width: 20%;
+	left: 28%;
+	top: 7%;
+	z-index: 5;
+}
+/*******************超人飞入飞出10s后消失*********************/
+.box{
+	display: none;
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	top: -100%;
+	left: -100%;
+	z-index: 10;
+}
+
+/*-------------------------------------------------------*/
+/************vivo手机移动旋转之后消失12s后消失*****************/
+.phone{
+	position: absolute;
+	display: none;
+	width: 0%;
+	left: 30%;
+	top: 20%;
+}
+
+/******************八块碎片的设置*******************/
+.chip{
+	position:absolute;
+	top: 0;
+	z-index: 5;
+	background-image: url(img/super_head.png);
+	background-size: 40% 40%;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	opacity: 0;
+}
+
+.chip1{
+	top: 19%;left: 45%;width:27%;
+	background-position: 75% 30%;
+}
+.chip2{
+	top: 19%;left: 29%;width: 28%;
+	background-position: 41% 36%;
+}
+.chip3{
+	top: 25%;left: 40%;width:32%;height: 23%;
+	background-position: 45% 30%;
+	background-size: 30% 30%;
+}
+.chip4{
+	top: 31%;left: 29%;width: 26%;
+	background-position: 41% 50%;
+}
+.chip5{
+	top: 33%;left: 42%;width:25%;height: 25%;
+	background-position: 47% 50%;
+}
+.chip6{
+	top: 42%;left: 52%;width: 20%;height: 20%;
+	background-position: 63% 50%;
+}
+.chip7{
+	top: 50%;left: 29%;width:26%;height: 19%;
+	background-position: 42% 50%;
+}
+.chip8{
+	top: 55%;left: 41%;width: 31%;
+	background-position: 61% 58%;
+}
+/*-------------------------------------------------------*/
+.stars{
+	width: 20%;
+	display: none;
+	position: absolute;
+	top:0;
+	opacity: 0;
+
+}
+.star1{
+	top:2%;left:22%;
+}
+.star2{
+	top:10%;left:54%;
+}
+.star3{
+	top:29%;left:66%;
+}
+.star4{
+	top:31%;left:5%;
+}
+.star5{
+	top:55%;left:11%;
+}
+.star6{
+	top:46%;left: 70%;
+}
+.star7{
+	top:70%;left:35%;
+}
+.star8{
+	top: 75%;left:75%;
+}
+
+
+
+	</style>
+
+</head>
+<body>
+<div class="wrap">
+<img src="img/word_bg.jpg" class="bj">
+<img src="img/one_pic1.png" class="one_pic1 star">
+<img src="img/one_pic2.png" class="one_pic2 star">
+<img src="img/one_pic3.png" class="one_pic3 star">
+<div class="box">
+<img src="img/super_head.png" class="super_head">
+<img src="img/super_body1.png" class="super1 super">
+<img src="img/super_body2.png" class="super2 super">
+<img src="img/super_body3.png" class="super3 super">	
+</div>
+<img src="img/phone.png" class="phone">
+<img src="img/chip1.png" class="chip1 chip">
+<img src="img/chip2.png" class="chip2 chip">
+<img src="img/chip3.png" class="chip3 chip">
+<img src="img/chip4.png" class="chip4 chip">
+<img src="img/chip5.png" class="chip5 chip">
+<img src="img/chip6.png" class="chip6 chip">
+<img src="img/chip7.png" class="chip7 chip">
+<img src="img/chip8.png" class="chip8 chip">
+
+
+<img src="img/star4.png" class="star1 stars">
+<img src="img/star5.png" class="star2 stars">
+<img src="img/star6.png" class="star3 stars">
+<img src="img/star7.png" class="star4 stars">
+<img src="img/star8.png" class="star5 stars">
+<img src="img/star9.png" class="star6 stars">
+<img src="img/star10.png" class="star7 stars">
+<img src="img/star11.png" class="star8 stars">
+
+<div class="word_wrap"></div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/wenzi.js"></script>
+<script type="text/javascript">
+//******************************************手机显示********************************************//
+function phoneAppear(){
+	var t = 0;
+	var timerPhoneApper = setInterval(function(){
+		t++;
+		$(".phone").css({
+			transform:"rotate(" + t + "deg)",
+			width:(40/360*t) + "%",
+			top:(38 - 18/360*t) + "%",
+			left:(45 - 15/360*t) + "%"
+		})
+		if(t == 360){
+			clearInterval(timerPhoneApper);
+			setTimeout("chipAppear();",2000);
+			disappear($(".star"));
+
+		}
+
+	},1)
+}
+//----------------------------------------------------------------------------------------------//
+//******************************************碎片显示********************************************//
+function chipAppear(){
+	var t = 0;
+	var timerChipAppear = setInterval(function(){
+		t++;
+			$(".chip").css({
+			                 opacity:t*0.01,
+		                   })
+		if(t == 100){
+			clearInterval(timerChipAppear);
+			phoneDisappear();
+		}
+
+	},10)
+}
+//----------------------------------------------------------------------------------------------//
+//******************************************phone消失函数********************************************//
+function phoneDisappear(){
+		var t = 100;
+	var disappear = setInterval(function(){
+		t--;
+			$(".phone").css({
+			                 opacity:t*0.01,
+		                   })
+		if(t == 0){
+			            clearInterval(disappear);
+						$(".phone").css({
+			                 display:"none",
+		                   });
+						chipmove();
+						StarsAppear();
+
+
+		}
+
+	},10)
+
+}
+//----------------------------------------------------------------------------------------------//
+
+//******************************************消失函数********************************************//
+function disappear(select){
+		var t = 100;
+	var disappear = setInterval(function(){
+		t--;
+			select.css({
+			                 opacity:t*0.01,
+		                   })
+		if(t == 0){
+			            clearInterval(disappear);
+						select.css({
+			                 display:"none",
+		                   })
+
+		}
+
+	},10)
+
+}
+//----------------------------------------------------------------------------------------------//
+//******************************************超人飞走函数********************************************//
+function supermanMoveout(){
+	var t = 90;	
+	var timer = setInterval(function(){
+		t++;
+		if(t == 200){
+			            clearInterval(timer);
+						$(".box").eq(0).css({   
+							display : "none",
+						});
+						clearInterval(timer2);
+						$(".phone").eq(0).css({   
+							display : "block",
+						});
+						phoneAppear();
+
+		}
+			$(".box").css({
+				top:(100 - t) + "%",
+				left:(100 - t) + "%"
+			});
+	},15)
+}
+
+//----------------------------------------------------------------------------------------------//
+
+//******************************************超人飞入函数********************************************//
+function supermanMovein(){
+	var t = 0;
+	var timer = setInterval(function(){
+		t++;
+		if(t == 90){
+         clearInterval(timer);
+         setTimeout("supermanMoveout()",1000)
+		}
+			$(".box").css({
+				top:(100 - t) + "%",
+				left:(100 - t) + "%"
+			});
+	},20)
+}
+//----------------------------------------------------------------------------------------------//
+
+//******************************************移动函数********************************************//
+var width = $(window).innerWidth();
+var height = $(window).innerHeight();
+function yidong(select){
+	var t = 0;
+	var t1 = 300;
+	var flag = 1;
+	var tops = [];
+	var lefts = [];
+	var fudu_left = [];
+	var fudu_right = [];
+	var len = select.length	;
+	for(var i = 0;i < len;i++){
+		tops.push(select.eq(i).position().top/height);
+		lefts.push(select.eq(i).position().left/width);
+		fudu_left.push(60/Math.random());
+		fudu_right.push(60/Math.random());
+
+	}
+		console.log(fudu_left);
+		console.log(fudu_right); 
+	var timer = setInterval(function(){
+		if(flag){
+			t++;
+			if(t > t1){
+				flag = 0;
+			}
+		}
+		else{
+			t--;
+			if(t < 0){
+				flag = 1;
+			}
+		}
+		for(var i = 0;i < len;i++){
+		select.eq(i).css({
+			left: (lefts[i]*100 + t/fudu_left[i] ) + "%",
+			top: (tops[i]*100 + t/fudu_right[i] ) + "%",
+		});
+	}
+	},1)
+}
+//----------------------------------------------------------------------------------------------//
+//******************************************星星移动函数********************************************//
+function yingdongStars(){
+
+}
+//----------------------------------------------------------------------------------------------//
+//******************************************碎片消失函数********************************************//
+function chipDisappear(){
+	var t = 0;
+	var t1 = 100;
+	var timer = setInterval(function(){
+		t++;
+		if(t == t1){
+			clearInterval(timer);
+			yidong($(".stars"));
+		}
+		$(".chip").css({
+			// scale:(-19/t1*t + 19)/19,
+			transform:"scale(" + (-19/t1*t + 19)/19 + "," + (-19/t1*t + 19)/19 + ")",
+		})
+	},10)
+}
+
+//----------------------------------------------------------------------------------------------//
+//******************************************碎片移动函数********************************************//
+function chipmove(){
+	var t = 0;
+	var t1 = 15;
+	var timer = setInterval(function(){
+		t++;
+		if(t == t1){
+			clearInterval(timer);
+			setTimeout("chipDisappear()",500);
+		}
+			$(".chip").eq(0).css({
+				top:(-9/t1*t + 19) + "%",
+				left:(10/t1*t + 45) + "%",
+				width:(-1/t1*t + 20) + "%",
+				transform:'rotate(' + 45/30*t + 'deg)'
+			});
+			$(".chip").eq(1).css({
+				top:(-19/t1*t + 19) + "%",
+				left:(-6/t1*t + 29) + "%",
+				width:(-1/t1*t + 20) + "%",
+				transform:'rotate(' + -50/30*t + 'deg)'
+			});
+			$(".chip").eq(2).css({
+				top:(-1/t1*t + 25) + "%",
+				left:(25/t1*t + 40) + "%",
+				width:(-1/t1*t + 20) + "%",
+				transform:'rotate(' + 86/30*t + 'deg)'
+			});
+			$(".chip").eq(3).css({
+				top:(-6/t1*t + 31) + "%",
+				left:(-21/t1*t + 29) + "%",
+				width:(-1/t1*t + 20) + "%",
+				transform:'rotate(' + -70/30*t + 'deg)'
+			});
+			$(".chip").eq(4).css({
+				top:(7/t1*t + 33) + "%",
+				left:(28/t1*t + 42) + "%",
+				width:(-1/t1*t + 20) + "%",
+				transform:'rotate(' + 60/30*t + 'deg)'
+			});
+			$(".chip").eq(5).css({
+				top:(31/t1*t + 42) + "%",
+				left:(22/t1*t + 52) + "%",
+				width:(-1/t1*t + 20) + "%",
+				transform:'rotate(' + 75/30*t + 'deg)'
+			});
+			$(".chip").eq(6).css({
+				top:(1/t1*t + 50) + "%",
+				left:(-15/t1*t + 29) + "%",
+				width:(-1/t1*t + 20) + "%",
+				transform:'rotate(' + -45/30*t + 'deg)'
+			});
+			$(".chip").eq(7).css({
+				top:(16/t1*t + 55) + "%",
+				left:(-10/t1*t + 41) + "%",
+				width:(-1/t1*t + 20) + "%",
+				transform:'rotate(' + -50/30*t + 'deg)'
+			});
+
+	},10)
+}
+//----------------------------------------------------------------------------------------------//
+//******************************************星星显示函数********************************************//
+function StarsAppear(){
+	$(".stars").css({
+	             display:"block",
+	           })
+	var t = 0;
+	var StarsAppear = setInterval(function(){
+		t++;
+			$(".stars").css({
+			                 opacity:t*0.01,
+		                   })
+		if(t == 100){
+			clearInterval(StarsAppear);
+		}
+
+	},20)
+
+
+}
+//----------------------------------------------------------------------------------------------//
+//******************************************文字输入********************************************//
+	var word_wrap = document.getElementsByClassName("word_wrap");
+	var t = 0;
+	var t1 = 0;    //控制文字显示速度
+    var t2 = 1000; //控制文字透明度
+	var p = ["凤凰体育讯 北京时间7月1日","2016年的自由市场开放首日","联盟就已经疯狂掀起金元风暴","继比尔与德罗赞先后斩获上亿大合同后","法国球星巴图姆也与黄蜂达成5年1.2亿美金的续约协议","一举跻身亿元先生之列","并且巴图姆拥有第5年的球员选项","","","",""];
+	var len = p.length;
+	console.log("len = " + len);
+	var c = [] ;
+	timer1 = setInterval(function(){
+     t++;
+     if(t%100 == 0){
+       		
+       		     if(t1 == len-1){
+						     	clearInterval(timer1);
+								$(".box").eq(0).css({   //文字动画结束后，让box display 开启超人动画
+									display : "block",
+								})
+								$(".word_wrap").css({
+									display:"none",
+								})
+								supermanMovein();
+						     }	
+		    c += p[t1] + "<br/>";
+            $(".word_wrap").eq(0).html(c);
+            t1++;
+     }
+     word_wrap[0].style.color = "rgba(255,255,255," + t2*0.005 + ")";
+     t2--;
+	},4)
+//----------------------------------------------------------------------------------------------//
+//*********超人盒子里动画的实现即3张图片交替显示***********//
+	var t3 = 0;
+	var t4 = 0;
+	var len_supers = $(".super").length;
+	var timer2 = setInterval(function(){
+	    for(var i = 0;i < len_supers;i++){
+	    	$(".super").eq(i).css({
+	    		display : "none",
+	    	});
+	    }
+		$(".super").eq(t3).css({
+			display : "block",
+		})
+		t3++;
+		t4++;
+		if(t3 == 3){
+			t3 = 0;
+		}	
+
+	},200)
+//----------------------------------------------------//
+
+
+      
+
+
+</script>
+</body>
+</html>
